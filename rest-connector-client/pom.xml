@@ -5,7 +5,7 @@
     <parent>
         <artifactId>fe</artifactId>
         <groupId>yu.com.fusion</groupId>
-        <version>1.0.0</version>
+        <version>1.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -28,7 +28,7 @@
         <dependency>
             <groupId>yu.com.fusion</groupId>
             <artifactId>rest-connector</artifactId>
-            <version>1.0.0</version>
+            <version>1.0.1-SNAPSHOT</version>
         </dependency>
 
         <!-- Logging -->
