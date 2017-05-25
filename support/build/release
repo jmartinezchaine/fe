@@ -1,0 +1,119 @@
+#!/bin/bash
+
+function printHelp {
+	echo "Help no implementada"
+}
+
+
+function incrementVersion {
+	IFS='.' read -r -a arr <<< "$1"
+	echo "${arr[0]}.${arr[1]}.$((arr[2]+1))"
+}
+
+
+
+#Extraccion de parametros
+VERSION_ARG=false
+while getopts v:h option
+do
+        case "${option}"
+        in
+                h) printHelp;exit 0;;
+                v) VERSION_VAR=$OPTARG;VERSION_ARG=true;;
+        esac
+done
+
+
+
+#path
+pwd
+
+
+#Verifico que no haya cambios sin commitear
+if [ -n "$(git status --porcelain)" ]; then 
+  echo "Hay cambios locales sin commit, no se puede ejecutar el comando"; 
+  exit 0
+fi
+
+
+
+#NO SE RECIVIERON PARAMETROS POR LO QUE SE EJECUTA EL ALGORITMO ORIGINAL BASADO EN LA VERSION DEL POM
+# Obtengo versión del proyecto
+echo "Obteniendo información del proyecto..."
+echo
+fullArtifact=`mvn -Dexec.executable='echo' -Dexec.args='#${project.groupId}@${project.artifactId}@${project.version}@${project.name}' --non-recursive exec:exec |  grep '#' | sed 's/#//'`
+IFS='@' read -r -a project <<< "$fullArtifact"
+
+groupId=${project[0]}
+artifactId=${project[1]}
+version=${project[2]}
+name=${project[3]}
+
+
+if $VERSION_ARG; then
+	echo "Se ejecuta el release con el nombre de version forzada: ${VERSION_VAR}"
+
+
+	mvn versions:set -DnewVersion=$VERSION_VAR
+
+	rm -rf */*.xml.versionsBackup
+	rm -rf *.xml.versionsBackup
+
+	git commit -a -m "Aftersale changing forced version for release"
+	
+	git push
+
+	git tag -a $VERSION_VAR -m $VERSION_VAR
+
+	git push origin $VERSION_VAR
+
+	mvn versions:set -DnewVersion=$version
+	
+	rm -rf */*.xml.versionsBackup
+	rm -rf *.xml.versionsBackup
+
+	git commit -a -m "Aftersale setting previous version"
+	
+	git push
+
+	exit 0
+fi
+
+
+
+if [[ $version =~ ^[0-9]?[0-9]?[0-9]\.[0-9]?[0-9]?[0-9]\.[0-9]?[0-9]?[0-9]-SNAPSHOT$ ]]; then
+	releaseVersion=`echo $version | sed -e 's/\(.*\)-SNAPSHOT/\1/'`
+	developmentVersion=`incrementVersion $releaseVersion`
+
+	if [ $developmentVersion != *-SNAPSHOT ]; then 
+	    developmentVersion=$developmentVersion-SNAPSHOT
+	fi
+
+
+	mvn versions:set -DnewVersion=$releaseVersion
+
+	rm -rf */*.xml.versionsBackup
+	rm -rf *.xml.versionsBackup
+
+	git commit -a -m "Aftersale changing version for release"
+	
+	git push
+
+	git tag -a $releaseVersion -m $releaseVersion
+
+	git push origin $releaseVersion
+
+	mvn versions:set -DnewVersion=$developmentVersion
+	
+	rm -rf */*.xml.versionsBackup
+	rm -rf *.xml.versionsBackup
+
+	git commit -a -m "Aftersale changing version for release"
+	
+	git push
+
+	exit 0
+fi
+
+
+

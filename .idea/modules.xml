@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/fe.iml" filepath="$PROJECT_DIR$/fe.iml" />
       <module fileurl="file://$PROJECT_DIR$/fe-web/fe-web.iml" filepath="$PROJECT_DIR$/fe-web/fe-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rest-connector/rest-connector.iml" filepath="$PROJECT_DIR$/rest-connector/rest-connector.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rest-connector-client/rest-connector-client.iml" filepath="$PROJECT_DIR$/rest-connector-client/rest-connector-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/support/support.iml" filepath="$PROJECT_DIR$/support/support.iml" />
     </modules>
   </component>

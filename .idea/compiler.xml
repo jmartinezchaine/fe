@@ -31,10 +31,26 @@
         <processorPath useClasspath="true" />
         <module name="fe-web" />
       </profile>
+      <profile default="false" name="Annotation profile for rest-connector" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="rest-connector" />
+      </profile>
+      <profile default="false" name="Annotation profile for rest-connector-client" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="rest-connector-client" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="fe" target="1.5" />
       <module name="fe-web" target="1.8" />
+      <module name="rest-connector" target="1.8" />
+      <module name="rest-connector-client" target="1.8" />
       <module name="support" target="1.5" />
     </bytecodeTargetLevel>
   </component>
