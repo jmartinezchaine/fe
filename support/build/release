@@ -49,6 +49,7 @@ artifactId=${project[1]}
 version=${project[2]}
 name=${project[3]}
 
+echo $groupId
 
 if $VERSION_ARG; then
 	echo "Se ejecuta el release con el nombre de version forzada: ${VERSION_VAR}"

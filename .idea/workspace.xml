@@ -2,114 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1f6b877-a72d-477c-810e-1ab509f9b8a2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_ning_async_http_client_1_9_33.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_10_5_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fe-web/src/main/java/uy/com/fusion/fe/web/context/config/rest/DefaultRestConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fe-web/src/main/java/uy/com/fusion/fe/web/context/config/rest/DgiConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fe-web/src/main/java/uy/com/fusion/fe/web/integration/DgiRestClient.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector-client/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector-client/rest-connector-client.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector-client/src/main/java/uy.com.fusion/library/rest/connector/exceptions/ServiceError.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector-client/src/main/java/uy.com.fusion/tech/rest/connector/client/CustomDataBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector-client/src/main/java/uy.com.fusion/tech/rest/connector/client/DynamicRestConnectorClient.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector-client/src/main/java/uy.com.fusion/tech/rest/connector/client/ResponseContainer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector-client/src/main/java/uy.com.fusion/tech/rest/connector/client/RestConnectorClient.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector-client/src/main/java/uy.com.fusion/tech/rest/connector/client/TrackingDataBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector-client/src/main/java/uy.com.fusion/tech/rest/connector/client/decorator/RequestHeadersDecorator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector-client/src/main/java/uy.com.fusion/tech/rest/connector/client/exception/HttpRestConnectorClientException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector-client/src/main/java/uy.com.fusion/tech/rest/connector/client/exception/RestConnectorClientException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector-client/src/main/java/uy.com.fusion/tech/rest/connector/client/interceptor/CustomHeadersInterceptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector-client/src/main/java/uy.com.fusion/tech/rest/connector/client/interceptor/RequestHeadersDecoratorInterceptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector-client/src/main/java/uy.com.fusion/tech/rest/connector/client/interceptor/ServiceLogInterceptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector-client/src/main/java/uy.com.fusion/tech/rest/connector/client/interceptor/TrackingHeaderInterceptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector-client/src/main/java/uy.com.fusion/tech/rest/connector/client/logger/ServiceTracker.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector-client/src/main/java/uy.com.fusion/tech/rest/connector/client/newrelic/NewRelicDataHolder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector-client/src/main/java/uy.com.fusion/tech/rest/connector/client/newrelic/NewRelicReporter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector-client/src/main/java/uy.com.fusion/tech/rest/connector/client/serializer/ByteArrayPdfSerializer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector-client/src/main/java/uy.com.fusion/tech/rest/connector/client/serializer/ByteArrayXmlSerializer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector-client/src/main/java/uy.com.fusion/tech/rest/connector/client/util/InterceptorsUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector-client/src/main/java/uy.com.fusion/tech/rest/connector/client/util/TrackingDataBuilderHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/rest-connector.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/HttpBodyParts.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/HttpHeaders.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/HttpMethod.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/HttpResponse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/HttpStatus.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/HttpStreamingResponse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/Query.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/RestConnector.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/RestConnectorFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/builder/HttpRequestBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/builder/HttpRequestBuilderException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/builder/PerRequestConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/client/InnerHttpClient.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/client/InnerHttpClientBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/client/apache/HttpContextMetricsHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/client/apache/HttpRequestExecutorWithMetrics.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/client/apache/InnerApacheHttpClient.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/client/apache/InnerApacheHttpClientBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/client/metrics/ExtendedEofSensorInputStream.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/client/metrics/ExtendedEofSensorWatcher.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/client/metrics/MetricRegistry.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/client/metrics/MetricRegistryListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/client/metrics/ResponseEndTimestampWatcher.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/compression/ContentEncoding.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/config/RestConnectorConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/interceptors/HttpRequestContext.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/interceptors/HttpResponseContext.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/interceptors/Interceptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/interceptors/Interceptors.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/interceptors/impl/AcceptHessianInterceptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/interceptors/impl/AcceptJsonInterceptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/interceptors/impl/CacheInterceptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/interceptors/impl/SimpleLocalCacheInterceptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/interceptors/impl/SnappyRequestBodyInterceptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/interceptors/impl/SnappyResponseBodyInterceptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/multipart/ByteArrayPart.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/multipart/FilePart.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/multipart/Part.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/multipart/StringPart.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/serializers/JsonSerializer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/serializers/JsonStreamSerializer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/serializers/MultiPartSerializer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/serializers/Serializer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/serializers/Serializers.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/serializers/StreamDeserializer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/serializers/StreamSerializers.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/serializers/StringSerializer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/serializers/StringStreamSerializer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/serializers/json/JodaDateTimeJsonDeserializer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/serializers/json/JodaDateTimeJsonSerializer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/serializers/json/JodaLocalDateJsonDeserializer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/serializers/json/JodaLocalDateJsonSerializer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/serializers/json/JsonConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/serializers/json/ObjectMapperFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/serializers/json/SupportedDatesDateFormat.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/utils/Assert.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/utils/DependencyUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/utils/LinkedCaseInsensitiveMap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/utils/RestConnectorPool.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/utils/ShutdownHook.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/utils/StreamIterator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/java/uy.com.fusion.library.rest/utils/TypeReference.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-connector/src/main/resources/reference.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/support/build/release" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fe-web/fe-web.iml" afterPath="$PROJECT_DIR$/fe-web/fe-web.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fe-web/pom.xml" afterPath="$PROJECT_DIR$/fe-web/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fe-web/src/main/resources/conf/desa.properties" afterPath="$PROJECT_DIR$/fe-web/src/main/resources/conf/desa.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fe-web/src/main/resources/logback.xml" afterPath="$PROJECT_DIR$/fe-web/src/main/resources/logback.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fe-web/target/classes/conf/desa.properties" afterPath="$PROJECT_DIR$/fe-web/target/classes/conf/desa.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fe-web/target/classes/logback.xml" afterPath="$PROJECT_DIR$/fe-web/target/classes/logback.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/build/release" afterPath="$PROJECT_DIR$/support/build/release" />
     </list>
     <ignored path="fe.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -160,8 +53,8 @@
       <file leaf-file-name="release" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/support/build/release">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.59375">
-              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.6875">
+              <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -1159,7 +1052,7 @@
       <workItem from="1495287734234" duration="5272000" />
       <workItem from="1495313114022" duration="2305000" />
       <workItem from="1495584669284" duration="1118000" />
-      <workItem from="1495676507273" duration="1506000" />
+      <workItem from="1495676507273" duration="1652000" />
     </task>
     <task id="LOCAL-00001" summary="Sube el proyecto base:&#10;Jetty configurado&#10;Hazelcast para pruebas&#10;Controller&#10;&#10;POM, base con algunos detalles extras.">
       <created>1495166150254</created>
@@ -1171,7 +1064,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26949000" />
+    <option name="totallyTimeSpent" value="27095000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -1640,8 +1533,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/support/build/release">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59375">
-          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.6875">
+          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
           <folding />
         </state>
       </provider>
