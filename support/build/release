@@ -96,7 +96,7 @@ if [[ $version =~ ^[0-9]?[0-9]?[0-9]\.[0-9]?[0-9]?[0-9]\.[0-9]?[0-9]?[0-9]-SNAPS
 	rm -rf */*.xml.versionsBackup
 	rm -rf *.xml.versionsBackup
 
-	git commit -a -m "Aftersale changing version for release"
+	git commit -a -m "Changing version for release"
 	
 	git push
 
@@ -109,7 +109,7 @@ if [[ $version =~ ^[0-9]?[0-9]?[0-9]\.[0-9]?[0-9]?[0-9]\.[0-9]?[0-9]?[0-9]-SNAPS
 	rm -rf */*.xml.versionsBackup
 	rm -rf *.xml.versionsBackup
 
-	git commit -a -m "Aftersale changing version for release"
+	git commit -a -m "Changing version for develop after release"
 	
 	git push
 
