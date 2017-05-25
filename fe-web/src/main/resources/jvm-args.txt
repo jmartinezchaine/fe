@@ -1,0 +1,14 @@
+-Xms1G
+-Xmx1G
+-Djava.security.egd=file:/dev/./urandom
+-XX:+TieredCompilation
+-XX:+CMSClassUnloadingEnabled
+-verbose:gc
+-XX:+PrintGCDetails
+-XX:+PrintGCTimeStamps
+-XX:NewRatio=2
+-XX:+UseConcMarkSweepGC
+-XX:MaxGCPauseMillis=850
+-XX:+PrintGCDateStamps
+-Dfile.encoding=UTF-8
+-Dsun.net.inetaddr.ttl=10

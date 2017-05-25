@@ -2,6 +2,7 @@
 
 function printHelp {
 	echo "Help no implementada"
+	exit 0
 }
 
 
@@ -10,16 +11,30 @@ function incrementVersion {
 	echo "${arr[0]}.${arr[1]}.$((arr[2]+1))"
 }
 
+function package {
+	echo "Empaquetando..."
+	mvn packeage
+	exit 0
+}
 
+
+function run {
+    echo "Pa arriba como pedo de buzoooo...."
+    cd fe-web/target
+    java -jar fe-web-1.0.2.jar
+}
 
 #Extraccion de parametros
 VERSION_ARG=false
-while getopts v:h option
+while getopts v:h:p:r option
 do
         case "${option}"
         in
-                h) printHelp;exit 0;;
+                p) package;;
+                r) run;;
+                h) printHelp;;
                 v) VERSION_VAR=$OPTARG;VERSION_ARG=true;;
+
         esac
 done
 
@@ -57,8 +72,8 @@ if $VERSION_ARG; then
 
 	mvn versions:set -DnewVersion=$VERSION_VAR
 
-	rm -rf */*.xml.versionsBackup
-	rm -rf *.xml.versionsBackup
+	rm -rf */*.xml.*Backup
+	rm -rf *.xml.*Backup
 
 	git commit -a -m "Aftersale changing forced version for release"
 	
@@ -101,6 +116,9 @@ if [[ $version =~ ^[0-9]?[0-9]?[0-9]\.[0-9]?[0-9]?[0-9]\.[0-9]?[0-9]?[0-9]-SNAPS
 	git push
 
 	git tag -a $releaseVersion -m $releaseVersion
+
+
+    mvn prepare relseamvn rela
 
 	git push origin $releaseVersion
 
